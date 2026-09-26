@@ -1,0 +1,17 @@
+# Phases 1-2 (solver + seed generator)
+numpy
+scipy
+
+# Phase 3 (GUI)
+PySide6
+pyvista
+pyvistaqt
+matplotlib
+
+# Phase 6 (frame backdrop: STL/3MF loading)
+trimesh
+networkx
+lxml
+
+# Packaging (only needed to build the standalone exe):
+# pip install pyinstaller && pyinstaller --noconfirm suspension_tool.spec

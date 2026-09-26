@@ -1,0 +1,25 @@
+# Vehicle Definition File
+# 2026/07/03
+name_Vehicle: "Auburn Example"
+name_Config: "Hard Clay, Bar, No RS"
+tire_front_file:  "tiremodel_Dunlop_KT821_22x8x10_ClayHard.yml"
+tire_rear_file:  "tiremodel_Dunlop_KT821_22x8x10_ClayHard.yml"
+W_fl: 154.0 # lbf, Weight on front left tire, static
+W_fr: 154.0 # lbf, Weight on front right tire, static
+W_rl: 142.0 # lbf, Weight on rear right tire, static
+W_rr: 142.0 # lbf, Weight on rear right tire, static
+t_front_in: 51.0 # inches, Front track width
+t_rear_in: 44.0 # inches, Rear track width
+h_cg_in: 21.91 # in, CG Height above ground
+H_one_in: 15.41 # in, CG moment arm to roll axis
+h_raf_in: 6.427 # in, height, roll axis, front suspension
+h_rar_in: 6.58 # in, height, roll axis, rear suspension
+L_wb_in: 59.0 # in, Wheelbase
+rr_f: 64.0 # ft-lb/deg, Suspension Roll rate, front
+rr_r: 77.0 # ft-lb/deg, Suspension Roll rate, rear (was 56 w/o rollbar)
+rt_f_in: 2.5 # in, Front suspension travel allowed for cornering
+rt_r_in: 2.5 # in, Rear suspension travel allowed for cornering
+rsm: 0 # Rear Steer Mode: 0=off, 1=Active, rear tires steer same dir, -1= Passive, rear tires steer opposite dir
+rskp: -2.0 # Rear Steer Ratio, Passive - deg of steer angle per deg of body roll
+rska: -0.3 # Rear Steer Ratio, Active - deg of rear steer angle per deg of front steer angle (Pos for In-Phase, Neg for Counter-phase)
+yrg: 4.205 # Vehicle yaw radius of gyration, feet. Used in step steer response time calc

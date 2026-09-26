@@ -1,0 +1,50 @@
+# Builds the standalone Windows app with PyInstaller on a Windows runner
+# (PyInstaller cannot cross-compile, so this is how the .exe gets built
+# without a Windows dev machine).
+#
+# Run it from the GitHub website: Actions tab -> "Build Windows exe" ->
+# "Run workflow" (pick the branch). When it finishes, download the
+# "BajaSuspensionTool-windows" artifact — a zip of the app folder; unzip
+# anywhere and run BajaSuspensionTool.exe.
+
+name: Build Windows exe
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pyinstaller
+
+      - name: Run the test suite
+        run: python -m unittest
+
+      - name: Build with PyInstaller
+        run: pyinstaller --noconfirm suspension_tool.spec
+
+      - name: Smoke-test the exe (launches and exits)
+        shell: pwsh
+        run: |
+          $p = Start-Process -FilePath "dist/BajaSuspensionTool/BajaSuspensionTool.exe" -PassThru
+          Start-Sleep -Seconds 25
+          if ($p.HasExited) { throw "exe exited early with code $($p.ExitCode)" }
+          Stop-Process -Id $p.Id
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BajaSuspensionTool-windows
+          path: dist/BajaSuspensionTool

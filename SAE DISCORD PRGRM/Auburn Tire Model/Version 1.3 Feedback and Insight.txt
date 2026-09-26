@@ -1,0 +1,13 @@
+Claude, here I found someone in the Baja SAE discord that posted a very interesting tire model / car design helper that I want you to take a look at and see if there are any bits in here that would either help us add new features to our software to make sure design is actually a good design or to determine important vehicle limits. I will upload the files to a folder in the repository called "SAE DISCORD PRGRM" where this student made all of the python scripts for this. Here is what they messaged in the discord in addition to these files:
+
+OK folks, as promised, here's some Python code to create your own MMM yaw-moment diagrams. What is a yaw moment diagram? Read Chapter 8 of Milliken's book, "Race Car Vehicle Dynamics" for details, but it's a picture-portrait of your vehicle's maneuvering envelope. I tried to comment the code and YAML input files as much as possible and make variable names easy to follow. 
+
+In the main Python program, you can plug in your forward speed, curve radius, steer angle (at the wheel), and vehicle slip angle. The Cn-Ay plot is good for general use along a track where you can maintain speed. The Cn-Cy plot is good for use on a specific curve of a constant radius. Tire data is for a Dunlop KT821, from a grad student research project. The vehicle file is an actual Auburn baja car.
+
+I hope this is useful for planning general vehicle layout or evaluating your track or a particular curve. This is free to use for anyone, the code is provided as-is, no guarantees.
+
+Here's another tire model on some gravel and a tire data plotter. I have some doubts that the tire model under-reports tire forces, but that's a lot more research for another day.
+
+I did try to add a longitudinal force feature, but it got really complex really fast. I also tried to add a transient maneuver feature based on some Milliken papers, but it got real complex real fast. I hope the basic stuff helps, give me a shoutout if you make use of it.
+
+You'll notice that as you drop down in speed, you can see how the car starts to turn into a pig as the beta-lines get crazy. As the speed increases, the beta lines begin to straighten out. Yes, there's a lot here, but it's all valuable insights to your vehicle's maneuverability.

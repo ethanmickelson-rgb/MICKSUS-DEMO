@@ -1,0 +1,16 @@
+# Tire Defintion File
+tire_mfgr: "Dunlop"
+tire_model: "KT821"
+tire_diam_in: 22 # in, diameter, outside
+tire_width_in: 8 # in, width
+tire_rim_in: 10 # in, diameter, rim
+surf_descrip: "Clay, hardpack"
+coeff_m: -0.46 # Tire Model "m" coefficient, derived from test data
+coeff_c: 4.5 # Tire Model "c" coefficient derived from test data
+k_vert: 350.0 # lbf/in, spring rate, vertical
+p_tire: 10.0 # lb/in2, tire pressure for data
+camber: 0.0 # deg, camber for tire data
+F_zmax: 600.0 # lbf, maximum rated tire load
+COT_max: 0.35 # no units, percent of normal load that gets turned into Fx (drag)
+roll_res: 0.06 # no units, rolling resistance coefficient at zero slip angle.
+K: 0.045 # units of 1/deg, this controls the slope of the curve for Fx drag force

@@ -1,0 +1,276 @@
+{
+  "format": "baja-suspension-kinematics",
+  "version": 3,
+  "unit": "in",
+  "front": {
+    "hardpoints_mm": {
+      "suspension_type": "double_wishbone",
+      "uca_inner_front": [
+        1093.1162431735556,
+        224.0,
+        87.93537380659177
+      ],
+      "uca_inner_rear": [
+        906.2328532406466,
+        224.0,
+        61.670626193408225
+      ],
+      "uca_outer": [
+        972.1925261003664,
+        652.7932503711193,
+        66.0008808203973
+      ],
+      "lca_inner_front": [
+        1138.8072118652917,
+        140.0,
+        -10.799179315110791
+      ],
+      "lca_inner_rear": [
+        860.5418845489105,
+        140.0,
+        -49.906820684889226
+      ],
+      "lca_outer": [
+        1008.8660780030158,
+        702.0,
+        -194.945
+      ],
+      "tierod_inner": [
+        924.2703131050584,
+        112.0,
+        1.0770077352819207
+      ],
+      "tierod_outer": [
+        924.2903428233653,
+        687.899012957825,
+        -129.56444124673405
+      ],
+      "wheel_center": [
+        990.5999999999999,
+        762.0,
+        -63.5
+      ],
+      "shock_inner": [
+        999.6745482071011,
+        365.93488369824183,
+        297.9905145718537
+      ],
+      "shock_outer": [
+        999.6745482071011,
+        546.720025680761,
+        -149.46841364207796
+      ],
+      "tire_radius": 292.09999999999997,
+      "tire_width": 177.79999999999998,
+      "static_camber_deg": -1.0,
+      "static_toe_deg": 0.0,
+      "shock_on_uca": false,
+      "tierod_on_lca": false,
+      "tierod_on_uca": false
+    },
+    "setup": {
+      "track_width": 1524.0,
+      "wheelbase": 1524.0,
+      "ride_height": 304.79999999999995,
+      "tire_radius": 292.09999999999997,
+      "tire_width": 177.79999999999998,
+      "shock_min_length": 355.59999999999997,
+      "shock_max_length": 558.8,
+      "motion_ratio_goal": 0.55,
+      "shock_length_at_ride": 482.59999999999997,
+      "hub_offset": 60.0,
+      "desired_scrub_radius": 30.0,
+      "desired_caster_deg": 4.0,
+      "independent_caster": false,
+      "static_camber_deg": -1.0,
+      "static_toe_deg": 0.0,
+      "frame_half_width": 140.0,
+      "steering_arm_x": -80.0,
+      "steering_arm_plane_deg": 90.0,
+      "sketch_yaw_deg": 0.0,
+      "kickup_deg": 8.0,
+      "inboard_sep_frac": 0.4,
+      "inboard_sep": null,
+      "kingpin_length": null,
+      "shock_on_uca": false,
+      "tierod_on_lca": false,
+      "tierod_on_uca": false,
+      "has_halfshaft": false,
+      "x_offset": 990.5999999999999,
+      "z_offset": -355.59999999999997,
+      "frame_tube_offset": 15.875
+    },
+    "travel_mm": {
+      "droop": 138.5454545454545,
+      "bump": 230.90909090909088
+    },
+    "halfshaft": null,
+    "locked": null,
+    "shock": null
+  },
+  "rear": {
+    "hardpoints_mm": {
+      "suspension_type": "double_wishbone",
+      "uca_inner_front": [
+        1090.4529277786437,
+        224.0,
+        87.54652416250934
+      ],
+      "uca_inner_rear": [
+        909.1031558138625,
+        224.0,
+        62.05947583749065
+      ],
+      "uca_outer": [
+        972.2960196895184,
+        640.0932503711192,
+        66.0008808203973
+      ],
+      "lca_inner_front": [
+        1135.7666043361892,
+        140.0,
+        -11.241053910659048
+      ],
+      "lca_inner_rear": [
+        863.789479256317,
+        140.0,
+        -49.46494608934097
+      ],
+      "lca_outer": [
+        1008.9695715921678,
+        689.3,
+        -194.945
+      ],
+      "tierod_inner": [
+        924.3738066942104,
+        112.0,
+        1.1951022860595089
+      ],
+      "tierod_outer": [
+        924.3960137354047,
+        675.1087667767051,
+        -129.5811530302721
+      ],
+      "wheel_center": [
+        990.5999999999999,
+        749.3,
+        -63.5
+      ],
+      "shock_inner": [
+        999.7780417962531,
+        373.14484666820965,
+        293.07613631150895
+      ],
+      "shock_outer": [
+        999.7780417962531,
+        553.9299886507288,
+        -154.38279190242264
+      ],
+      "tire_radius": 292.09999999999997,
+      "tire_width": 177.79999999999998,
+      "static_camber_deg": -0.5,
+      "static_toe_deg": 0.0,
+      "shock_on_uca": false,
+      "tierod_on_lca": false,
+      "tierod_on_uca": false
+    },
+    "setup": {
+      "track_width": 1498.6,
+      "wheelbase": 1524.0,
+      "ride_height": 304.79999999999995,
+      "tire_radius": 292.09999999999997,
+      "tire_width": 177.79999999999998,
+      "shock_min_length": 355.59999999999997,
+      "shock_max_length": 558.8,
+      "motion_ratio_goal": 0.57,
+      "shock_length_at_ride": 482.59999999999997,
+      "hub_offset": 60.0,
+      "desired_scrub_radius": 30.0,
+      "desired_caster_deg": 4.0,
+      "independent_caster": false,
+      "static_camber_deg": -0.5,
+      "static_toe_deg": 0.0,
+      "frame_half_width": 140.0,
+      "steering_arm_x": -80.0,
+      "steering_arm_plane_deg": 90.0,
+      "sketch_yaw_deg": 0.0,
+      "kickup_deg": 8.0,
+      "inboard_sep_frac": 0.4,
+      "inboard_sep": null,
+      "kingpin_length": null,
+      "shock_on_uca": false,
+      "tierod_on_lca": false,
+      "tierod_on_uca": false,
+      "has_halfshaft": false,
+      "x_offset": 990.5999999999999,
+      "z_offset": -355.59999999999997,
+      "frame_tube_offset": 15.875
+    },
+    "travel_mm": {
+      "droop": 133.68421052631578,
+      "bump": 222.80701754385967
+    },
+    "halfshaft": {
+      "enabled": true,
+      "inner": [
+        495.3,
+        120.0,
+        97.30000000000001
+      ],
+      "inner_joint": "plunging_cv",
+      "max_cv_inner_deg": 25.0,
+      "max_cv_outer_deg": 45.0,
+      "plunge_total_mm": 50.0,
+      "plunge_in_pct": 50.0
+    },
+    "locked": null,
+    "shock": null
+  },
+  "vehicle": {
+    "wheelbase": 1524.0,
+    "cg_height": 508.0,
+    "cg_behind_front": 838.2,
+    "brake_front_frac": 0.6
+  },
+  "goals": null,
+  "frame": {
+    "path": "examples/demo_frame.stl",
+    "scale": 1000.0,
+    "rot_z_deg": 270.0,
+    "dx": 0.0,
+    "dy": 0.0,
+    "dz": 0.0
+  },
+  "dynamics": {
+    "weight_empty_lb": 420.0,
+    "driver_lb": 180.0,
+    "front_axle_lb": 270.0,
+    "rear_axle_lb": 330.0,
+    "unsprung_front_lb": 30.0,
+    "unsprung_rear_lb": 35.0,
+    "tire_rate_front_lbin": 250.0,
+    "tire_rate_rear_lbin": 250.0,
+    "spring1_front_lbin": 150.0,
+    "spring1_rear_lbin": 175.0,
+    "stack_front": "Single",
+    "stack_rear": "Single",
+    "mr_damper_front": 0.55,
+    "mr_damper_rear": 0.57,
+    "damp_bump_front_lbsin": 12.0,
+    "damp_rebound_front_lbsin": 16.0,
+    "damp_bump_rear_lbsin": 12.0,
+    "damp_rebound_rear_lbsin": 16.0,
+    "cg_height_in": 20.0,
+    "roll_radius_gyr_in": 18.0,
+    "cornering_stiff_front_lbdeg": 150.0,
+    "cornering_stiff_rear_lbdeg": 170.0,
+    "ay_g": 1.0,
+    "ax_g": 0.7,
+    "speed_mph": 30.0
+  },
+  "coords": "chassis+y",
+  "steer_limit_mm": null,
+  "candidates": null,
+  "onshape": null,
+  "mr_convention": "shock_per_wheel"
+}
